@@ -1,0 +1,11 @@
+{
+	"extends": "../../tsconfig.base.json",
+	"compilerOptions": {
+		"composite": true,
+		"tsBuildInfoFile": ".tsbuildinfo",
+		"exactOptionalPropertyTypes": true
+	},
+	"include": ["src"],
+	"exclude": ["node_modules"],
+	"references": [{ "path": "../../apps/api" }]
+}

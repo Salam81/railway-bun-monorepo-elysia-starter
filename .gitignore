@@ -1,0 +1,64 @@
+# dependencies
+node_modules
+/.pnp
+.pnp.js
+
+# output
+out
+dist
+dist-ssr
+*.tgz
+**/*.tgz
+**/*.tar.gz
+**/*.zip
+build
+/.next/
+
+# code coverage
+coverage
+/coverage
+*.lcov
+
+# logs
+logs
+*.log
+**/*.log
+_.log
+report.[0-9]_.[0-9]_.[0-9]_.[0-9]_.json
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# dotenv environment variable files
+.env
+.env.development.local
+.env.test.local
+.env.production.local
+.env.local
+*.local
+
+# caches
+.eslintcache
+.cache
+*.tsbuildinfo
+
+# Editor directories and files
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# misc
+*.pem
+**/*.trace
+**/*.bun
+package-lock.json
+
+# vercel
+.vercel

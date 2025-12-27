@@ -1,0 +1,25 @@
+{
+	"name": "@bun-monorepo-railway/api",
+	"version": "1.0.0",
+	"type": "module",
+	"private": true,
+	"scripts": {
+		"dev": "NODE_ENV=development bun --watch src/index.ts",
+		"----PRODUCTION----": "",
+		"build": "NODE_ENV=production bun build --compile --production --target=bun-linux-x64 --outfile dist/server ./src/index.ts",
+		"----LINT----": "",
+		"lint": "biome check"
+	},
+	"dependencies": {
+		"elysia": "catalog:",
+		"@elysiajs/cors": "^1.4.0"
+	},
+	"module": "src/index.ts",
+	"types": "src/exports.ts",
+	"exports": {
+		".": {
+			"types": "./src/exports.ts",
+			"default": "./src/index.ts"
+		}
+	}
+}
